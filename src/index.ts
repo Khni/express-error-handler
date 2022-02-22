@@ -1,3 +1,10 @@
+declare global {
+  namespace Express {
+    interface Request {
+      t?: any;
+    }
+  }
+}
 export * from "./errors/errorMsg";
 export * from "./errors/expressValidatorError";
 export * from "./errors/customError";
